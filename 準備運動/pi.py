@@ -1,0 +1,7 @@
+string = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
+words = string.split(" ")
+result = []
+for word in words:
+    result.append(len(word) - word.count(",") - word.count("."))
+
+print(result)
